@@ -1,0 +1,28 @@
+.pop-dialog {
+  background: $popBg;
+  box-sizing: border-box;
+  padding: 30px 50px 0 19px;
+  color: $primary;
+  .pop-dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .title {
+      font-size: 22px;
+      color: #f2f3f2;
+      img {
+        width: 26px;
+        margin-right: 9px;
+      }
+    }
+  }
+
+  .pop-dialog-close {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    background: url('~assets/images/pop-close.png') center no-repeat;
+    background-size: contain;
+  }
+}

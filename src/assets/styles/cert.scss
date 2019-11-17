@@ -1,0 +1,246 @@
+.ct-cert-box {
+  padding: 34px 0 0 20px;
+  .ct-cert-head {
+    color: #ffffff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    .icon {
+      width: 30px;
+      margin-right: 14px;
+    }
+  }
+  .ct-cert-main {
+    display: flex;
+    .ct-cert-aside {
+      .cert-images {
+        height: 890px;
+        overflow-y: auto;
+        padding-right: 20px;
+        &::-webkit-scrollbar {
+          width: 12px;
+        }
+        .cert-image-item {
+          width: 230px;
+          height: 346px;
+          background: url(~assets/images/border.png) center no-repeat;
+          background-size: 100% 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 23px;
+          position: relative;
+          cursor: pointer;
+          &.active {
+            background: url(~assets/images/border-selected.png) center no-repeat;
+            background-size: 100% 100%;
+          }
+          img {
+            width: calc(100% - 36px);
+            height: calc(100% - 76px);
+          }
+          p {
+            position: absolute;
+            color: #ffffff;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            bottom: 0;
+          }
+        }
+      }
+    }
+    .ct-cert-content {
+      margin-left: 40px;
+      .ct-cert-part {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .ct-cert-compare {
+          width: 790px;
+          height: 463px;
+          box-shadow: 0px 0px 8px 0px rgba(0, 158, 255, 0.61),
+            0px 1px 27px 0px rgba(0, 169, 255, 0.15);
+          border-radius: 8px;
+          border: 1px solid;
+          border-image: linear-gradient(
+              90deg,
+              rgba(59, 159, 200, 1),
+              rgba(207, 240, 255, 1),
+              rgba(59, 159, 200, 1)
+            )
+            1 1;
+          margin-right: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          &:before {
+            content: '比对结果';
+            position: absolute;
+            width: 248px;
+            text-align: center;
+            height: 50px;
+            color: #ffffff;
+            line-height: 50px;
+            background: url(~assets/images/icon-compare.png) center no-repeat;
+            background-size: 100%;
+            top: -25px;
+          }
+          .source,
+          .target {
+            width: 350px;
+            height: 350px;
+            padding: 20px 30px;
+            box-sizing: border-box;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            p {
+              color: #ffffff;
+              font-size: 20px;
+              padding-bottom: 12px;
+            }
+          }
+          .target {
+            padding: 0;
+          }
+          .split {
+            height: 100%;
+            img {
+              height: 100%;
+            }
+          }
+        }
+        .ct-cert-message {
+          width: 761px;
+          height: 463px;
+          border-radius: 8px;
+          border: 2px solid rgba(22, 53, 108, 1);
+          box-sizing: border-box;
+          padding: 12px;
+          h3 {
+            font-size: 18px;
+            color: #ffffff;
+          }
+          .prod-block {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .title {
+              background: #014966;
+              border: 2px solid #0088c3;
+              color: #ffffff;
+              width: 44px;
+              height: 84px;
+              text-align: center;
+              box-sizing: border-box;
+              padding: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &.vertical {
+                writing-mode: vertical-lr;
+              }
+            }
+            .prod-content {
+              width: 666px;
+              height: 160px;
+              border: 1px solid #16356c;
+              margin-left: 10px;
+              .prod-title {
+                color: #ffffff;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                border-bottom: 1px solid #16356c;
+              }
+              .prod-table {
+                color: #ffffff;
+                height: 100%;
+              }
+              .prod-receive-content {
+                height: 73px;
+                overflow-y: auto;
+                .line {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 5px 50px;
+                  box-sizing: border-box;
+                  border-bottom: 1px solid #16356c;
+                }
+              }
+              &.min {
+                height: 110px;
+              }
+            }
+          }
+        }
+        .ct-cert-sign {
+          display: flex;
+          flex-direction: column;
+          .cert-sign {
+            width: 395px;
+            height: 220px;
+            border-radius: 8px;
+            border: 2px dashed rgba(59, 159, 200, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+              background: url(~assets/images/icon-text.png) center no-repeat;
+              width: 38px;
+              height: 165px;
+              color: #ffffff;
+              padding: 5px;
+              writing-mode: vertical-lr;
+              line-height: 38px;
+              text-align: center;
+              letter-spacing: 2px;
+            }
+            img {
+              width: 260px;
+              height: 160px;
+              margin-left: 25px;
+            }
+          }
+        }
+        .ct-cert-map {
+          margin-left: 25px;
+          width: 1145px;
+          height: 460px;
+          border-radius: 8px;
+          border: 2px solid rgba(22, 53, 108, 1);
+          .map-query {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #ffffff;
+            padding: 12px 20px;
+            span {
+              margin-right: 12px;
+            }
+          }
+          #map {
+            width: 1020px;
+            height: 380px;
+            margin: 10px auto 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .extra {
+    padding: 0;
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "智能识图",
+    "icon": "image-search",
+    "url": "/image"
+  },
+  {
+    "name": "报关单查询",
+    "icon": "text-search",
+    "url": "http://www.baidu.com"
+  }
+]
